@@ -1,5 +1,5 @@
 <div>
-  <form [formGroup]="form" (ngSubmit)="submit()" onload="NgOnInit()">
+  <form [formGroup]="form" (ngSubmit)="submit()" onload="OnDownload()">
     <label for="orders" class="label1">Select</label>&nbsp;
     <select formControlName="orders" class="orders">
       <option
@@ -14,12 +14,12 @@
     &nbsp;
     <button>submit</button>
   </form>
-  <div>
+  <!--<div>
     <p class="Info">More Information</p>
     <p id="info" style="display: none;">
       Sito web per visualizzare dati covid in Italia
     </p>
-  </div>
+  </div>-->
 </div>
 <div id="jsonOutput"></div>
 <div class="split right">

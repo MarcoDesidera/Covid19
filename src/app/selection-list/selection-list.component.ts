@@ -68,7 +68,9 @@ export class SelectionListComponent implements OnInit {
   getId() {
     of(this.getOrders()).subscribe((orders) => {
       this.orders = orders;
+      console.log(this.orders[0].id);
       this.form.controls.orders.patchValue(this.orders[0].id);
+      //this.form.controls.orders.patchValue(this.orders[0].id);
       return this.form.controls.orders.patchValue(this.orders[0].id);
     });
 
